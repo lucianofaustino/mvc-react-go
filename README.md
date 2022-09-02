@@ -3,6 +3,9 @@
 npx create-react-app mvc
 
 npm install history react-router-dom@6
+
+npm install react-router-dom
+
 // end of comandos react
 
 // para startar o projeto
