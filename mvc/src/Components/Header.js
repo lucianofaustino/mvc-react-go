@@ -6,8 +6,10 @@ export const Header = () => {
     return (
         <div className={styles.header}>
             
-                <Link to="/" >Home </Link>
-                <Link to="/login" > Login / Cadastrar</Link>
+                <nav className="container">
+                    <Link to="/" >Home </Link>
+                    <Link to="/login" > Login / Cadastrar</Link>
+                </nav>
             
         </div>
     )
