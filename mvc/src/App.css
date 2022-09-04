@@ -6,6 +6,7 @@ body {
     padding-top: 3rem;
     margin: 0;
     color: #333;
+    background: #b5b5b5;
     --type-first: Helvetica, Arial, sans-serif;
     --type-second: Georgia;
     font-family: var(--type-first);

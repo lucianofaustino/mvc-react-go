@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Button } from '../Formulario/Button'
+import { Input } from '../Formulario/Input'
 
 
 export const LoginFormulario = () => {
@@ -29,15 +31,9 @@ export const LoginFormulario = () => {
         <section>
             <h1>Login</h1>
             <form action="" onSubmit={handleLogin}>
-                <input
-                    type="text"
-                    value={username}
-                    onChange={({ target }) => setUsername(target.value)} />
-                <input
-                    type="text"
-                    value={password}
-                    onChange={({ target }) => setPassword(target.value)} />
-                <button>Entrar</button>
+                <Input label="Usuário" type="text" name="username" />
+                <Input label="Senha" type="password" name="password"  />
+                <Button disabled  >Entrar</Button>
             </form>
             <Link to='/login/cadastrar'>Cadastrar</Link>
         </section>
