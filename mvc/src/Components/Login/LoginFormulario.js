@@ -3,39 +3,19 @@ import { Link } from 'react-router-dom'
 import { Button } from '../Formulario/Button'
 import { Input } from '../Formulario/Input'
 import { useFormulario } from '../../Hooks/useFormulario'
-import { TOKEN_POST, USER_GET } from '../../api'
+import {UserContext} from '../../UserContext'
 
 export const LoginFormulario = () => {
     const username = useFormulario()
     const password = useFormulario()
 
-    React.useEffect(() => {
-        const token = window.localStorage.getItem('token');
-        if (token) {
-            getUser(token);
-        }
-    }, [])
-
-    async function getUser(token) {
-        const { url, options } = USER_GET(token);
-        const response = await fetch(url, options);
-        const json = await response.json();
-        console.log(json);
-    }
+    const { userLogin } = React.useContext(UserContext)
 
     async function handleLogin(event) {
         event.preventDefault()
 
         if (username.validate() && password.validate()) {
-            const { url, options } = TOKEN_POST({
-                username: username.value,
-                password: password.value,
-            });
-
-            const response = await fetch(url, options);
-            const json = await response.json();
-            window.localStorage.setItem('token', json.token);
-            getUser(json.token);
+            userLogin(username.value, password.value)
         }
     }
 
