@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 import { Button } from '../Formulario/Button'
 import { Input } from '../Formulario/Input'
 import { useFormulario } from '../../Hooks/useFormulario'
-import {UserContext} from '../../UserContext'
+import { UserContext } from '../../UserContext'
 
 export const LoginFormulario = () => {
     const username = useFormulario()
     const password = useFormulario()
 
-    const { userLogin } = React.useContext(UserContext)
+    const { userLogin, error, loading } = React.useContext(UserContext)
 
     async function handleLogin(event) {
         event.preventDefault()
@@ -25,9 +25,14 @@ export const LoginFormulario = () => {
             <form action="" onSubmit={handleLogin}>
                 <Input label="Usuário" type="text" name="username" {...username} />
                 <Input label="Senha" type="password" name="password" {...password} />
-                <Button>Entrar</Button>
+                {loading ? (
+                    <Button disabled>Carregando...</Button>
+                ) : (
+                    <Button>Entrar</Button>
+                )}
+                {error && <p>{error}</p>}
             </form>
             <Link to='/login/cadastrar'>Cadastrar</Link>
-        </section>
+        </section >
     )
 }

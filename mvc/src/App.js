@@ -4,21 +4,21 @@ import { Header } from './Components/Header'
 import { Footer } from './Components/Footer'
 import { Home } from './Components/Home'
 import { Login } from './Components/Login/Login'
-import { UserStorange } from './UserContext'
+import { UserStorage } from './UserContext'
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <UserStorange>
+        <UserStorage>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Login/*" element={<Login />} />
           </Routes>
           <Footer />
-        </UserStorange>
+        </UserStorage>
       </BrowserRouter>
     </div>
   );
