@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +10,7 @@ body {
     color: #333;
     background: #b5b5b5;
     --type-first: Helvetica, Arial, sans-serif;
-    --type-second: Georgia;
+    --type-second: courier, georgia;
     font-family: var(--type-first);
 }
 
@@ -35,12 +37,49 @@ input {
     color: #333;
 }
 
-a{
+a {
     text-decoration: none;
+    color: #333;
 }
 
 .container {
     max-width: 1100px;
     padding: 0 1rem;
     margin: 0 auto;
+}
+
+.title {
+    font-family: var(--type-second);
+    line-height: 1;
+    font-size: 3rem;
+    font-size: 1rem 0;
+    margin: 1rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: .3rem;
+    background: #ddd;
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    border-radius: .2rem;
+    z-index: -1;
+}
+
+.animeLeft {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: animeLeft .4s forwards;
+}
+
+@keyframes animeLeft {
+    to {
+        opacity: 1;
+        transform: initial;
+    }
 }

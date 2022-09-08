@@ -21,7 +21,7 @@ export const Header = () => {
                     </Link>
                 ) : (
                     <Link className={styles.login} to="/login" aria-label="login" >
-                        Login / Cadastrar
+                        Cadastrar | Login
                     </Link>
                 )}
             </nav>
