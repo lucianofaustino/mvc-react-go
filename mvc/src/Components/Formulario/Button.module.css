@@ -4,7 +4,7 @@
     cursor: pointer;
     border: none;
     border-radius: 0.3rem;
-    background: #0095ff;
+    background-image: linear-gradient(0deg, #0079cf, #159eff);    
     color: #001726;
     min-width: 8rem;
     padding: 0.8rem 3rem;
