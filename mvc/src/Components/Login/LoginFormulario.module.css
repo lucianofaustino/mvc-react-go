@@ -12,6 +12,7 @@
 
 .form {
     margin-bottom: 2rem;
+    max-width: 25rem;
 }
 
 .perdeu {
@@ -37,6 +38,12 @@
     background-image: linear-gradient(0deg, #0079cf, #159eff);
 }
 
-.Button {
-    color: red;
+@media( max-width: 50rem ) {
+    .gridLoginForm {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        margin-top: 2rem;
+    
+    }
+
 }
