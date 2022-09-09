@@ -31,7 +31,7 @@ export const LoginFormulario = () => {
                 <Link className={stylesBtn.button} to='/login/cadastrar'>Cadastrar</Link>
             </div>
 
-            <div className={styles.login} >
+            <div className={`${styles.login} formulario`} >
                 <h1 className="title">Login</h1>
                 <form className={styles.form} onSubmit={handleLogin}>
                     <Input label="Usuário" type="text" name="username" {...username} />
