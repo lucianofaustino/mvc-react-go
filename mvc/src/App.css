@@ -77,6 +77,11 @@ a {
     animation: animeLeft .4s forwards;
 }
 
+.formulario {
+    margin-bottom: 2rem;
+    max-width: 25rem;
+}
+
 @keyframes animeLeft {
     to {
         opacity: 1;
