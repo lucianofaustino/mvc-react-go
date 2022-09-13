@@ -1,0 +1,44 @@
+.gridLoginForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100%;
+    gap: 6rem;
+    margin-top: 5rem;
+}
+
+.gridLoginForm h1 {
+    margin-bottom: 3rem;
+}
+
+.perdeu {
+    display: inline-block;
+    color: #666;
+    padding: 00.5rem 0;
+}
+
+.perdeu::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    display: block;
+}
+
+.cadastro p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.subtitle::after {
+    background-image: linear-gradient(0deg, #0079cf, #159eff);
+}
+
+@media( max-width: 50rem ) {
+    .gridLoginForm {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        margin-top: 2rem;
+    
+    }
+
+}
