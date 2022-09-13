@@ -1,19 +1,15 @@
 
-// comandos de criação do app react
-npx create-react-app mvc
-
-npm install history react-router-dom@6
-
-npm install react-router-dom
-
-// end of comandos react
-
-// para startar o projeto
-  cd frontend
-  cd mvc
-  npm start
 
 
-// CSS
-todos serão MODULE, exceto o GLOBAL!
+## Projeto CRUD em React e Golang. 
+## EM CONSTRUÇÃO.
 
+### Responsáveis: Luciano e Gabriel.
+
+#### Backend: Gabriel
+#### Frontend: Luciano
+
+
+##### Backend: Será criado usando Golang, com o banco de dados em nuvem AWS.
+
+##### Frontend: Será criado usando HTML5, CSS3 e React-Dom.
