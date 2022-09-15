@@ -32,7 +32,7 @@ export const LoginFormulario = () => {
             </div>
 
             <div className={`${styles.login} formulario`} >
-                <h1 className="title">Login</h1>
+                <h1 className={` title ${styles.decoracao} `}>Login</h1>
                 <form className={styles.form} onSubmit={handleLogin}>
                     <Input label="Usuário" type="text" name="username" {...username} />
                     <Input label="Senha" type="password" name="password" {...password} />
