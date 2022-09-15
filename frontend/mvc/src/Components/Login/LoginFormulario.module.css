@@ -13,7 +13,7 @@
 .perdeu {
     display: inline-block;
     color: #666;
-    padding: 00.5rem 0;
+    padding: 00.7rem 0;
 }
 
 .perdeu::after {
@@ -29,8 +29,10 @@
     margin-bottom: 2rem;
 }
 
-.subtitle::after {
+.decoracao::after {
     background-image: linear-gradient(0deg, #0079cf, #159eff);
+    background: #ddd;
+
 }
 
 @media( max-width: 50rem ) {

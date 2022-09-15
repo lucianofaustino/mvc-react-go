@@ -7,8 +7,8 @@
 body {
     padding-top: 3rem;
     margin: 0;
-    color: #333;
-    background: #b5b5b5;
+    color: #ddd;
+    background: #2a2b2c;
     --type-first: Helvetica, Arial, sans-serif;
     --type-second: courier, georgia;
     font-family: var(--type-first);
@@ -63,7 +63,7 @@ a {
     display: block;
     width: 5rem;
     height: .3rem;
-    background: #ddd;
+    background-image: linear-gradient(0deg, #0079cf, #159eff);
     position: absolute;
     bottom: 0px;
     left: -20px;
