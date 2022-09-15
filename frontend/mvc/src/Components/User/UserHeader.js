@@ -11,13 +11,13 @@ export const UserHeader = () => {
     const { pathname } = location
     switch (pathname) {
       case '/conta/cadastrarProduto':
-        setTitle('Novo cadastro')
+        setTitle('Cadastrar')
         break
       case '/conta/pesquisarProduto':
-        setTitle('Ítens cadastrados')
+        setTitle('Cadastrados')
         break
       default:
-        setTitle('Home Sistema')
+        setTitle('Sistema')
     }
   }, [location])
 
