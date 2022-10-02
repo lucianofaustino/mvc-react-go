@@ -7,6 +7,7 @@ import { Login } from './Components/Login/Login'
 import { User } from './Components/User/User';
 import { UserStorage } from './UserContext'
 import { ProtectedRoute } from './Components/Ajuda/ProtectedRoute';
+import NotFound from './Components/Ajuda/NotFound';
 
 
 function App() {
@@ -15,18 +16,21 @@ function App() {
       <BrowserRouter>
         <UserStorage>
           <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="login/*" element={<Login />} />
-            <Route
-              path="conta/*"
-              element={
-                <ProtectedRoute>
-                  <User />
-                </ProtectedRoute>
-              }
-            />
-          </Routes>
+          <main className="AppBody">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="login/*" element={<Login />} />
+              <Route
+                path="conta/*"
+                element={
+                  <ProtectedRoute>
+                    <User />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
           <Footer />
         </UserStorage>
       </BrowserRouter>

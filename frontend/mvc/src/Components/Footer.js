@@ -3,6 +3,8 @@ import styles from './Footer.module.css'
 
 export const Footer = () => {
   return (
-    <div className={styles.footer}>Footer</div>
+    <footer className={styles.footer}>
+      <p>Todos os direitos reservados</p>
+    </footer>
   )
 }
