@@ -82,6 +82,23 @@ a {
     max-width: 25rem;
 }
 
+.mainContainer {
+    margin-top: 8rem;
+    margin-left: 10rem;
+    align-items: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 4rem);
+}
+
+.AppBody {
+    flex: 1;
+}
+
+
 @keyframes animeLeft {
     to {
         opacity: 1;

@@ -1,0 +1,14 @@
+.footer {
+    /* background-image: linear-gradient(0deg, #0079cf, #159eff); */
+    background: #171819;
+
+    padding: 3rem 1rem 0 1rem;
+    height: 8rem;
+    text-align: center;
+    color: #4b4b4b;
+  }
+  
+  .footer p {
+    margin-top: 1rem;
+  }
+  
