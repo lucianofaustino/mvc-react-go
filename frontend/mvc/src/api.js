@@ -1,4 +1,4 @@
-export const API_URL = 'https://lucianofaustino.dev/json/json'
+export const API_URL = '#'
 
 /* Recebe o token do  'jwt' */
 export function TOKEN_POST(body) {

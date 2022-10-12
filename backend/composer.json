@@ -1,0 +1,27 @@
+{
+    "name":"vendor/backend",
+    "description": "Sistema de gerenciamento logístico",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+         {
+            "name" : "Gabriel da Silva Oliveira",
+            "email": "gabrieldev73@gmail.com",
+            "role" : "Developer",
+            "homepage": "https://github.com/gabidevs"
+         }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Src\\":"src/"
+        }
+    },
+
+    "files":[
+        "src/config.php"
+    ]
+}
