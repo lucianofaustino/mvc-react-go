@@ -54,3 +54,17 @@ export function USER_POST(body) {
     },
   };
 }
+
+// cadastrar um produto
+export function PRODUTO_POST(formData, token) {
+  return {
+    url: API_URL + '/api/produto',
+    options: {
+      method: 'POST',
+      headers: {
+        Authorization: 'Bearer ' + token,
+      },
+      body: formData,
+    },
+  };
+}
