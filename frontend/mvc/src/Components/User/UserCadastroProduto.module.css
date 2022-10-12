@@ -1,0 +1,28 @@
+
+/* init novo produto */
+#cadastro .container-login-cadastro {
+    max-width: 600px;
+}
+
+#login .container-login-cadastro {
+    max-width: 400px;
+}
+
+@media(max-width:500px) {
+
+    #form-cadastro,
+    #form-cad-produto {
+        display: block;
+    }
+}
+
+.login-cadastro-itens p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.login-cadastro-itens h2 {
+    font-size: 1.25rem;
+    margin-bottom: 40px
+}
+/* End of novo produto */

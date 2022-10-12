@@ -18,7 +18,7 @@ export const Input = ({ label, type, name, value, onChange, error, onBlur }) => 
                 onChange={onChange}
                 onBlur={onBlur}
             />
-            { error && <p className={styles.error}>{error}</p>}
+            {error && <p className={styles.error}>{error}</p>}
         </div>
     )
 }
