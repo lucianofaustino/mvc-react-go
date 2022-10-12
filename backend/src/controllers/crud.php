@@ -3,8 +3,6 @@
 namespace Src\Controllers;
 
 
-require_once('../config.php');
-
 use Src\Database\Database;
 use PDO;
 use Src\Controllers\Crud as ControllersCrud;
