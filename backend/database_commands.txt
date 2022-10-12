@@ -1,0 +1,15 @@
+/* 1º comando (Clique Ctrl + Enter */
+
+CREATE DATABASE IF NOT exists dblugalog;
+
+/* 2º comando (Clique Ctrl + Enter */
+
+use dblugalog;
+
+/* 3º comando (Clique Ctrl + Enter */
+
+CREATE TABLE IF NOT EXISTS produto (
+	id int(5) not null primary key auto_increment,
+    nome varchar(40) not null,
+    quantidade int not null
+);

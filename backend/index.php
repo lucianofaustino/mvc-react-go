@@ -5,11 +5,21 @@ require __DIR__.'/vendor/autoload.php';
 
 use Src\Controllers\Crud;
 
+$response['Method'] = 'POST';
+$response['Header'] = 'produto';
 
-$teste = new Crud;
 
-$query = "null,'Shampoo Header and Shoulders'";
+if(isset($_POST['produto'])) {
+    $table = $_POST['produto'];
+    $query = "null,";
+    $query .= "'".$_POST['nome']."',";
+    $query .= $_POST['quantidade'];
+    $request = new Crud;
+    $request->Insert($table,$query);
 
-$teste->Insert(null,'Shampoo Header and Shoulders');
+    $response = $request->erro;
 
-echo $teste->erro['response'];
+}
+
+echo json_encode($response);
+
